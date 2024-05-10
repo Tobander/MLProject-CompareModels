@@ -7,3 +7,5 @@ There are a bunch of good Machine-Learning models out there that you can use for
 First of all, you can compare different models so that you find the one, that provides the **best results** for your specific use-case. That way you are also **mitigating your risks** because you are not dependant from one model or company. But you can also then try to run this model locally and therefor have **no more privacy issues** and also only have to pay the **costs** for your infrastructure but don't have to pay for the usage of an API any more.
 
 ## How To
+
+![CompareModels](https://github.com/Tobander/MLProject-CompareModels/assets/45336196/6d31b842-30d1-4236-91e1-aff023067a1e)
