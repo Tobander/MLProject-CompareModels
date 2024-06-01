@@ -20,17 +20,12 @@ The next step is to build an index of those documents and then create a tool to 
 # 🟢 4. Creating a Lanchain use with different Models
 The main purpose we're using **Langchain** is to efficiently manage and streamline the process of interacting with different AI models because it offers several benefits:
 
-1. **Modularization**
-By breaking down the interaction into separate steps (prompt creation, model selection, and output parsing), we can manage and modify each part independently. This modular approach makes the system more flexible and easier to maintain.
+**1. Modularization:** By breaking down the interaction into separate steps (prompt creation, model selection, and output parsing), we can manage and modify each part independently. This modular approach makes our system more flexible and easier to maintain.
 
-2. Reusability
-Each component of the chain (prompt, model, parser) can be reused across different parts of the application. For example, the same parser can be used with different models, or the same prompt structure can be used with different conversations.
+**2. Reusability:** Each component of the chain (prompt, model, parser) can be reused just as it is when we switch models. There is no need to change the code in any way as the Chain stays the sam no matter which AI model we are going to use.
 
-3. Maintainability
-Having a clear structure makes the code easier to read and maintain. If there is a need to change how the prompt is structured or to switch out the parser, these changes can be made in isolation without affecting the entire system.
+**3. Maintainability:** Having a clear structure makes the code easier to read and maintain. If there is a need to change how the prompt is structured or to switch out the parser, these changes can be made in isolation without affecting the entire system.
 
-4. Consistency
-By using a chain, we ensure that every interaction follows the same process. This consistency helps in maintaining a coherent conversation flow and makes debugging easier.
+**4. Consistency:** By using a chain, we ensure that every interaction follows the same process. This consistency helps in maintaining a coherent conversation flow and makes debugging easier.
 
-5. Conversation Context Management
-The chain allows us to incorporate conversation history into each interaction. This is crucial for maintaining context in a conversation, enabling the model to provide more relevant and coherent responses based on the previous exchanges.
+**5. Conversation Context Management:** The chain allows us to incorporate conversation history into each interaction. This is crucial for maintaining context in a conversation, as it enables usto ask the model follow-up questions to earlier responses.
