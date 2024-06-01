@@ -17,7 +17,7 @@ First thing we need to do is load all the relevant documents you want to use for
 # 🟢 3. Creating an Index and Retriever
 The next step is to build an index of those documents and then create a tool to retrieve those documents efficiently. An **Inde** is a data structure that allows for fast retrieval of information. Like an organized list or a catalog where you can quickly find what you're looking for. A **retriever** on the other hand is a tool that helps you find documents from the index based on some query or input. So basically, we have our list of documents. We convert those  into Vectors that we can easily search through and then create an organized index of these vectors for fast retrieval. To do this, we use a Retriever that can quickly find the most relevant documents from this index based on a search query or a question.
 
-# 🟢 4. Creating a Lanchain use with different Models
+# 🟢 4. Creating a Lanchain to use with different Models
 The main purpose we're using **Langchain** is to efficiently manage and streamline the process of interacting with different AI models because it offers several benefits:
 
 **1. Modularization:** By breaking down the interaction into separate steps (prompt creation, model selection, and output parsing), we can manage and modify each part independently. This modular approach makes our system more flexible and easier to maintain.
