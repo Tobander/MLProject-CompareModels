@@ -17,7 +17,7 @@ First thing we need to do is load all the relevant documents you want to use for
 # 🟢 3. Creating an Index and Retriever
 The next step is to build an index of those documents and then create a tool to retrieve those documents efficiently. An **Inde** is a data structure that allows for fast retrieval of information. Like an organized list or a catalog where you can quickly find what you're looking for. A **retriever** on the other hand is a tool that helps you find documents from the index based on some query or input. So basically, we have our list of documents. We convert those  into Vectors that we can easily search through and then create an organized index of these vectors for fast retrieval. To do this, we use a Retriever that can quickly find the most relevant documents from this index based on a search query or a question.
 
-# 🟢 4. Creating a Lanchain to use with different Models
+# 🟢 4. Using Langchain to use with different Models
 The main purpose we're using **Langchain** is to efficiently manage and streamline the process of interacting with different AI models because it offers several benefits:
 
 **1. Modularization:** By breaking down the interaction into separate steps (prompt creation, model selection, and output parsing), we can manage and modify each part independently. This modular approach makes our system more flexible and easier to maintain.
@@ -29,3 +29,10 @@ The main purpose we're using **Langchain** is to efficiently manage and streamli
 **4. Consistency:** By using a chain, we ensure that every interaction follows the same process. This consistency helps in maintaining a coherent conversation flow and makes debugging easier.
 
 **5. Conversation Context Management:** The chain allows us to incorporate conversation history into each interaction. This is crucial for maintaining context in a conversation, as it enables usto ask the model follow-up questions to earlier responses.
+
+# 🟢 5. Invoking the Chain 
+After we have created our chain with prompt, model and parser, we want to use it to answer questions. So we find the relevant context to the question, append any past conversation history and then together with the question feed it to our chain to get an answer. After that, we add the question and answer also to our conversation history.
+
+And that's basically it. You can use the full code provided in the notebook or use it as a backend and build a frond-end with Chainlit for example.
+
+📓 **Notebook:** You can find the complete code in `ragbot_multiple_models.ipynb`.
